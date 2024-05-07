@@ -1,12 +1,9 @@
 import data from './data.json' with { type: 'json' };
-const main = document.getElementById('main');
 
+const main = document.getElementById('main');
 const dayBtn = document.getElementById('daily');
 const weekBtn = document.getElementById('weekly');
 const monthBtn = document.getElementById('monthly');
-
-console.log(main)
-console.log(main.dataset.theme);
 
 let innerHtml = '';
 for (const item of data) {
